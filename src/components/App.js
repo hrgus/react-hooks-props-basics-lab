@@ -12,8 +12,11 @@ function App() {
   return (
     <div>
       <NavBar />
-      <Home />
-      <About />
+      <Home city={user.city} name={user.name} color={user.color}/>
+      <About 
+        links={user.links} 
+        bio={user.bio}
+      />
     </div>
   );
 }
